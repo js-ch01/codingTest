@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 //public class inflearn.javaCodingTest.Q2_6ReversedPrime {
-public class Q2_6ReversedPrime {
+public class Q2_06ReversedPrime {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();

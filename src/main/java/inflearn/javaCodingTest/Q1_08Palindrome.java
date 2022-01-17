@@ -2,7 +2,7 @@ package inflearn.javaCodingTest;
 
 import java.util.Scanner;
 
-public class Q1_8Palindrome {
+public class Q1_08Palindrome {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();

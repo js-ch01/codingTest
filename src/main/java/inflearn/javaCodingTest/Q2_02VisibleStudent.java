@@ -3,7 +3,7 @@ package inflearn.javaCodingTest;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Q2_2VisibleStudent {
+public class Q2_02VisibleStudent {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();

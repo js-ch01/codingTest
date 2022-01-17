@@ -2,7 +2,7 @@ package inflearn.javaCodingTest;
 
 import java.util.*;
 
-public class Q1_6RemoveDuplicatedChar {
+public class Q1_06RemoveDuplicatedChar {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.next();

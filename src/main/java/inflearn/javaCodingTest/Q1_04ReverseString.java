@@ -3,7 +3,7 @@ package inflearn.javaCodingTest;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Q1_4ReverseString {
+public class Q1_04ReverseString {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();

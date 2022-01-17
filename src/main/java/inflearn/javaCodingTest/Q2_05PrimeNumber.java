@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.util.stream.Stream;
 
-public class Q2_5PrimeNumber {
+public class Q2_05PrimeNumber {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();

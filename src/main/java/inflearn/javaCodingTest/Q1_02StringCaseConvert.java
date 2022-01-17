@@ -2,7 +2,7 @@ package inflearn.javaCodingTest;
 
 import java.util.Scanner;
 
-public class Q1_2StringCaseConvert {
+public class Q1_02StringCaseConvert {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);

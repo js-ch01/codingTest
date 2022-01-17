@@ -2,7 +2,7 @@ package inflearn.javaCodingTest;
 
 import java.util.Scanner;
 
-public class Q2_4Fibonacci {
+public class Q2_04Fibonacci {
 
 
     public static void main(String[] args) {
