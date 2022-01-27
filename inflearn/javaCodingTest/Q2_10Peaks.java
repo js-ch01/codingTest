@@ -40,7 +40,7 @@ public class Q2_10Peaks {
         UP, RIGHT, DOWN, LEFT,
     }
 
-    // input[row][col]이 봉우리인지 확인
+    // inputs[row][col]이 봉우리인지 확인
     private static boolean isPeak(int row, int col, int[][] inputs) {
         // 상하좌우 반복
         for (Direction direction : Direction.values()) {
