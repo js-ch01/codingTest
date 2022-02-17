@@ -16,7 +16,8 @@ public class Q7_06부분집합_구하기 {
     /* 강의 풀이 수정*/
     private static void printSubSet(int level, int num) {
 //        System.out.print("level = " + level);
-//        System.out.println(", ch = " + Arrays.toString(ch));
+//        System.out.println(", ch = " + Arrays.toString(subset));
+
         if (level == num + 1) {
             String tmp = "";
             for (int i = 1; i <= num; i++) {
