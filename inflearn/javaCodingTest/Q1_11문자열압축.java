@@ -37,6 +37,27 @@ public class Q1_11문자열압축 {
         return sb.toString();
     }
 
+    private static String compressStr2(String input) {
+        StringBuilder sb = new StringBuilder();
+        input += " "; // 마지막 문자 비교를 위해
+
+        int count = 1;
+        char prev = ' ';
+        for(int i = 0; i < input.length(); i++) {
+            char ch = input.charAt(i);
+            if (prev == ch) {
+                count++;
+            } else {
+                if (count != 1) sb.append(count);
+                sb.append(ch);
+                prev = ch;
+                count = 1;
+            }
+        }
+
+        return sb.toString();
+    }
+
     // 강의풀이
     public String solution(String s) {
         String answer = "";
