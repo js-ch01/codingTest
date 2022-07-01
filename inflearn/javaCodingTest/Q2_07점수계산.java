@@ -35,6 +35,19 @@ public class Q2_07점수계산 {
         return totalScore;
     }
 
+    private static int getScore2(int[] nums) {
+        int total = 0;
+        int score = 1;
+        for(int i = 0; i <nums.length; i++) {
+            if (nums[i] == 0) {
+                score = 1;
+            } else {
+                total += score++;
+            }
+        }
+        return total;
+    }
+
     // 강의 풀이
     public int solution(int[] arr) {
         int answer = 0, cnt = 0;

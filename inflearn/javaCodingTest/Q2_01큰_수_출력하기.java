@@ -1,5 +1,6 @@
 package inflearn.javaCodingTest;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -24,5 +25,27 @@ public class Q2_01큰_수_출력하기 {
                 System.out.print(nums[i] + " ");
             }
         }
+    }
+
+    private static Integer[] print(int num, int[] nums) {
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(nums[0]);
+        for(int i = 1; i < num; i++) {
+            if(nums[i-1] < nums[i]) list.add(nums[i]);
+        }
+
+        return list.toArray(Integer[]::new);
+    }
+
+    private static int[] print2(int num, int[] nums) {
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(nums[0]);
+        for(int i = 1; i < num; i++) {
+            if(nums[i-1] < nums[i]) list.add(nums[i]);
+        }
+
+        return list.stream()
+                .mapToInt(Integer::intValue)
+                .toArray();
     }
 }
