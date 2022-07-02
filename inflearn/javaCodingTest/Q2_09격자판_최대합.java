@@ -2,6 +2,7 @@ package inflearn.javaCodingTest;
 
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.stream.Stream;
 
 public class Q2_09격자판_최대합 {
     static int _num = 5;
@@ -44,6 +45,27 @@ public class Q2_09격자판_최대합 {
         // 값들을 모아서 처리한다
         int[][] sums = new int[][]{rowLineSum, colLineSum, diaLineSum};
         return Arrays.stream(sums)
+                .flatMapToInt(Arrays::stream)
+                .max()
+                .orElse(0);
+    }
+
+    // Stream.of 사용
+    private static int getMaxSum(int num, int[][] nums) {
+        int[] sumOfRow = new int[num]; // 행
+        int[] sumOfCol = new int[num]; // 열
+        int[] sumOfDia = new int[2];   // 대각선
+
+        for (int i = 0; i < num; i++) {
+            for (int j = 0; j < num; j++) {
+                sumOfRow[i] += nums[i][j];
+                sumOfCol[j] += nums[i][j];
+                if (i == j) sumOfDia[0] += nums[i][j];
+                if (i + j == num - 1) sumOfDia[1] += nums[i][j];
+            }
+        }
+
+        return Stream.of(sumOfRow, sumOfCol, sumOfDia)
                 .flatMapToInt(Arrays::stream)
                 .max()
                 .orElse(0);
